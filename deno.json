@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "server": "deno run -A --watch --unstable-otel --env-file=.env otel.server.ts",
+    "logger": "deno run -A --watch --env-file=.env otel.logger.ts",
+    "client": "deno run -A --watch client.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
