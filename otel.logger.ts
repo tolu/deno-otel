@@ -3,7 +3,7 @@
 const port = parseInt(Deno.env.get('OTEL_EXPORTER_OTLP_ENDPOINT').split(':').at(1));
 
 Deno.serve({
-  port,
+  port, hostname: "0.0.0.0"
 },
 
   async (req) => {

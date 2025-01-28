@@ -2,7 +2,9 @@
   "tasks": {
     "server": "deno run -A --watch --unstable-otel --env-file=.env otel.server.ts",
     "logger": "deno run -A --watch --env-file=.env otel.logger.ts",
-    "client": "deno run -A --watch client.ts"
+    "client": "deno run -A --watch client.ts",
+    "docker-start": "deno run -A --watch --unstable-otel otel.server.ts",
+    "shell-start": "OTEL_DENO=true OTEL_SERVICE_NAME=my-deno-app OTEL_EXPORTER_OTLP_ENDPOINT=localhost:4318 OTEL_EXPORTER_OTLP_PROTOCOL=http/json deno run -A --watch --unstable-otel otel.server.ts"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1"
