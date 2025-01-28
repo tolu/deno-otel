@@ -73,8 +73,7 @@ docker compose up --build
 Yields the following output
 
 ```sh
-deno-otel-container  | name="BatchSpanProcessor.Flush.ExportError" reason="Other(hyper_util::client::legacy::Error(Connect, ConnectError(\"tcp connect error\", Os { code: 111, kind: ConnectionRefused, message: \"Connection refused\" })))" message=Failed during the export process
-deno-otel-container  |  name="BatchSpanProcessor.Flush.ExportError" reason="Other(hyper_util::client::legacy::Error(Connect, ConnectError(\"tcp connect error\", Os { code: 111, kind: ConnectionRefused, message: \"Connection refused\" })))" message=Failed during the export process
+name="BatchSpanProcessor.Flush.ExportError" reason="Other(hyper_util::client::legacy::Error(Connect, ConnectError(\"tcp connect error\", Os { code: 111, kind: ConnectionRefused, message: \"Connection refused\" })))" message=Failed during the export process
 ```
 
 ## 3. Working example (env set in shell)
